@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <!-- Page Head -->
+    <header class="padding_40">
+        <h1>Task Management</h1>
+    </header>
+
+    <!-- Bild Task -->
+    <section class="container_bild_task padding_40">
+        <form class="bild_task">
+            <input id="input_task" type="text" placeholder="وظیفه مورد نظر">
+
+            <select name="users" id="users">
+                <option value="none">کارمند مورد نظر</option>
+            </select>
+
+            <button class="submit_task">ثبت</button>
+        </form>
+    </section>
+
+    <!-- Store Task -->
+    <section class="container_task padding_40">
+        <div class="tasks">
+            <div class="task_box">
+                <h2 id="ali" data-name="ali" class="user">علی</h2>
+                <ul class="task_body ali_task"></ul>
+            </div>
+            <div class="task_box">
+                <h2 id="reza" data-name="reza" class="user">رضا</h2>
+                <ul class="task_body reza_task"></ul>
+            </div>
+            <div class="task_box">
+                <h2 id="hosein" data-name="hosein" class="user">حسین</h2>
+                <ul class="task_body hosein_task"></ul>
+            </div>
+            <div class="task_box">
+                <h2 id="ehsan" data-name="ehsan" class="user">احسان</h2>
+                <ul class="task_body ehsan_task"></ul>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal">
+        <h2>Please Fll The Both Blanks</h2>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
